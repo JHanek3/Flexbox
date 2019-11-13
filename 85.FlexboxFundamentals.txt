@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Basics</title>
+    <style>
+        body {
+            background: #51546A;
+            color: white;
+        }
+
+        @media(min-width:600px) {
+            .parent-1 {
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+            }
+
+            .parent-2 {
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+        
+        .parent-3 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+
+
+        .parent-1 div,
+        .parent-2 div, .parent-3 img {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .item-1 {
+            flex: 2;
+            order: 2;
+
+        }
+
+        .item-2 {
+            flex: 1;
+            order: 3;
+
+        }
+
+        .item-3 {
+            flex: 1;
+            order: 1;
+
+        }
+
+        .item-4 {
+            flex-basis:  25%;
+        }
+        
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-1">
+        <div class="item-1">
+            <h3>Item One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="item-2">
+            <h3>Item Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="item-3">
+            <h3>Item Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="parent-2">
+        <div class="item-4">
+            <h3>Item Four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="item-5">
+            <h3>Item Five</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="item-6">
+            <h3>Item Six</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    <div class="parent-3">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+        <img src="https://youaccel.com/press/wp-content/uploads/2019/03/devslopes-wp.jpg">
+    
+    </div>
+</body></html>
+
+<!--Given starter template 
+display: flex; lined elements up horizonatlly
+flex-direction: row; nothing changes
+                column, exverything stacks on the y axis
+                column-reverse
+                row-reverse
+                Does what it says
+flexbox gave them an even width between the two of them
+gave a width of 25%, extra space on the right margin
+justify content applies to parent element
+    aligns horizontally, on the main axis
+    left margin, center or right margin (flex-start = left)
+flex
+    you can adjust the width with 
+    flex: 1;
+    flex: 2; gives twice the flex length of the other children
+order
+    change the order all within the css
+    order 2 = middle, with order 1 and order 3 on the others
+align items
+    for parent
+    helps us align items vertically
+    by default set to stretch = height
+    elements with diffrent amount of content, height would be based on content
+    start, aligns flex-start(top), center flex-end(bottom)
+add space->justify content in the parent
+    justify-content: space-around;
+    space-between only puts space between the elements
+@media(600px), on a min width of 600 display flex all elements horizontal row
+    smaller than 600px then default div element display of block
+flex-basis: 25%;
+    use flex box type response instead of width getting stuck
+wrapping elements
+    elements wrap around and stack on each other
+    wrap-reverse stacks the last element on top
+-->

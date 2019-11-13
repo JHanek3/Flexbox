@@ -1,0 +1,19 @@
+A CSS3 Layout modes that provides an easy and clean way to arrange items within a container
+Floats, margin, padding
+Flexbox takes care of all this
+    No Floats
+    Positioning child elements is a lot easier
+    Responsive and mobile friendly
+    Margins don't collapse with the margins of its content
+    Change the order of elements without editing the html
+Flexixble Box Model Concept
+    Direction-agnostic
+    Alter item width and height to best fit in its container
+    Buld for small-scale layouts, also Grid standard for more large scale
+Flex Container (main container)
+    Flex items are the child elements
+    Flex properties that can be added to the container and items
+    x and y axis
+        main axis, cross axis
+main start - main end + cross start - cross end
+Postition elements across your website, without having to rely on 3rd party libraries
