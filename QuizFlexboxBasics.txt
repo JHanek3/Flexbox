@@ -1,0 +1,61 @@
+1.
+display: flex; has a default flex direction of 
+row
+
+2.
+justify-content; is a flex container property
+true
+
+3.
+justify-content; is a CSS property for aligning items horizontally
+true
+
+4.
+justify-content: _______; will space items equally
+space-around    equal space around
+space-between   equal space between
+
+5.
+The CSS property align-items is used to align items 
+vertically
+
+6.
+To center an item in the middle of a page you would use a combination of what flex properties?
+justify-contnet and align-items
+
+7.
+Which CSS property defines the direction items are placed in its container?
+flex-direction
+
+8.
+You have 4 images of different height in a row. Which flex property would you use to center them vertically in a row?
+align-items: center;
+
+9.
+You have 16 items all squeezed onto the same row. Which CSS property will help spread them out?
+flex-wrap
+
+10.
+You can change the order of html elements with Flexbox
+true
+
+11.
+The ____ property changes the order of flex item on the flex line.
+order
+
+12.
+To vertically align a specifc item you apply which CSS property?
+align-self
+
+13.
+Which of the following CSS properties is a flex container property?
+justify-content
+flex-direction
+
+14.
+You must have a display: flex; on the flex container to use flux properties
+true
+
+15.
+justify-content: _____; will align items to the end of the row
+space-between
