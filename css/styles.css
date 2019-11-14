@@ -20,7 +20,8 @@ body {
 }
 
 .brand,
-.nav-link, a {
+.nav-link,
+a {
     text-transform: uppercase;
     color: #303137;
 }
@@ -42,7 +43,8 @@ body {
 
 }
 
-.topnav .nav-link, a {
+.topnav .nav-link,
+a {
     text-decoration: none;
     padding-right: 20px;
     font-size: 20px;
@@ -52,18 +54,36 @@ body {
     display: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headershot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 250px;
+    width: 100%;
+    max-height: 325px;
+}
 
 @media (max-width: 768px) {
 
     ul.topnav li a.nav-link {
         display: none;
     }
-    
+
     ul.topnav li.dropdownLink {
         display: block;
         position: absolute;
         top: 10px;
-        right: 20px; 
+        right: 20px;
     }
 
     ul.topnav.responsive li.dropdownLink {
@@ -76,14 +96,6 @@ body {
         flex-direction: column;
         text-align: right;
     }
-
-/*
-    ul.topnav.responsive li {
-        position: relative;
-        top: 30px;
-        right: 30px;
-    }
-*/
 
     ul.topnav.responsive li a.nav-link {
         position: relative;

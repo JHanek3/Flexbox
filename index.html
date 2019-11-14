@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>My Landing Page</title>
 </head>
 
@@ -15,11 +14,22 @@
             <li><a class="nav-link" href="#">Products</a></li>
             <li><a class="nav-link" href="#">About Us</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>
-            <li class="dropdownLink"><a onclick="toggleDropdown()" href ="javascript:void(0)">&#9776;</a></li>
-            
+            <li class="dropdownLink"><a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
         </ul>
-
     </nav>
+    
+    <header>
+        <div class="headershot-wrapper">
+            <img class="headshot" src="assets/headshot.jpg" alt="profile image of my beautiful face">
+            <h1>Jon Hanek</h1>
+        </div>
+    </header>
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
 
@@ -35,4 +45,5 @@ margin-right auto instead use flexbox
     justify-content space-between
         put space between the two elements
 function added to the anchor
+Hamburger icon inherits from the anchor tag, thats why its underlined and blue
 -->
