@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>My Landing Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>My Landing Page</title>
 </head>
-<body>
-    <nav class ="navbar">
-        <div class="brand">Code<span>Sensei</span></div>
-            <ul class="topnav">
-                <li><a  class="nav-link" href="#">Home</a></li>
-                <li><a  class="nav-link" href="#">Products</a></li>
-                <li><a  class="nav-link" href="#">About Us</a></li>
-                <li><a  class="nav-link" href="#">Contact</a></li>
-            </ul>
-            
-    </nav>
 
-</body>
-</html>
+<body>
+    <nav class="navbar">
+        <div class="brand">Code<span class="sensei">Sensei</span></div>
+        <ul class="topnav" id="navbar-toggle">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">Products</a></li>
+            <li><a class="nav-link" href="#">About Us</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+            <li class="dropdownLink"><a onclick="toggleDropdown()" href ="javascript:void(0)">&#9776;</a></li>
+            
+        </ul>
+
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body></html>
 
 <!--
 Make a mockup of your design
     Break down each component with a plan
 <span> is used to group inline-elements in a document
 flex only affects one level deep
+margin 0 auto, put everything in the middle
+margin-right auto instead use flexbox
+    justify-content space-between
+        put space between the two elements
+function added to the anchor
 -->
