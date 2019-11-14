@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
@@ -17,13 +18,51 @@
             <li class="dropdownLink"><a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
         </ul>
     </nav>
-    
+
     <header>
         <div class="headershot-wrapper">
             <img class="headshot" src="assets/headshot.jpg" alt="profile image of my beautiful face">
             <h1>Jon Hanek</h1>
         </div>
     </header>
+
+    <section class="services">
+        <div class="container">
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/graph_lines.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-right">
+                    <img class="icon" src="assets/pie_chart.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-left">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+            <div class="media-object">
+                <div class="icon-left">
+                    <img class="icon" src="assets/assistant_icon.svg" alt="graph chart">
+                </div>
+                <div class="blurb-wrapper-right">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -33,7 +72,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="main.js"></script>
 
-</body></html>
+</body>
+
+</html>
 
 <!--
 Make a mockup of your design
@@ -46,4 +87,7 @@ margin-right auto instead use flexbox
         put space between the two elements
 function added to the anchor
 Hamburger icon inherits from the anchor tag, thats why its underlined and blue
+adding a flex 1, each child given a flex of 1 causes the space to be distributed evenly
+
+
 -->
