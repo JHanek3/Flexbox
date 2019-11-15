@@ -76,7 +76,7 @@ header {
     max-height: 325px;
 }
 
-.services {
+.services, .contact-container {
     background-color: #F1F3FA;
     padding: 4rem 1rem;
 }
@@ -171,6 +171,34 @@ blurb-info {
     
 }
 
+form label {
+    font-size: 14px;
+    
+}
+
+.form-group {
+    margin-bottom: .75rem;
+}
+
+.form-control {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #292b2c;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: .375rem .74rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
+        
+}
+
+.submit-btn-wrapper {
+    margin-top: 4rem;
+}
+
 @media (max-width: 768px) {
 
     ul.topnav li a.nav-link {
@@ -222,8 +250,14 @@ blurb-info {
         order: 2;
         padding-top: 2rem;
     }
-
-
+    
+    .form-group {
+        display: flex;
+    }
+    
+    .submit-btn-wrapper {
+        text-align: center;
+    }
 }
 
 @media (max-width:599px) {
